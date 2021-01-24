@@ -1,0 +1,448 @@
+
+@font-face{
+    font-family: Staaliches;
+    src:url(staatliches-regular-webfont.woff)
+}
+
+
+header{
+   font-family: Staaliches;
+   font-size: 100px;
+   float: left;
+   background-color: black;
+   color:white;
+   
+ 
+}
+body{
+  background-color: red;
+}
+
+
+.gg-arrow-right-o {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 88px;
+  height: 88px;
+  border: 8px solid;
+  transform: scale(var(--ggs,1));
+  border-radius: 40px
+ }
+ 
+ .gg-arrow-right-o::after,
+ .gg-arrow-right-o::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  right: 24px
+ }
+ 
+ .gg-arrow-right-o::after {
+  width: 24px;
+  height: 24px;
+  border-top: 8px solid;
+  border-right: 8px solid;
+  transform: rotate(45deg);
+  bottom: 24px
+ }
+ 
+ .gg-arrow-right-o::before {
+  width: 35px;
+  height: 12px;
+  bottom: 30px;
+  background: currentColor;
+ } 
+
+.skillset{
+  font-family: Staaliches;
+  font-size: 20px;
+  left:20px;
+}
+.opaque{
+  animation:bye 15s step-end infinite;
+  font-family: Staaliches;
+  font-size: 40px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width:50px;
+  height:50px;
+  border:3px solid yellowgreen;
+  transform: scale(var(--ggs,1));
+  background-color: yellowgreen;
+}
+
+.opaque::after,
+ .opaque::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  right: 24px
+  
+ }
+ .opaque::before {
+  width: 10px;
+  height: 7px;
+  bottom: -62px;
+  left:12px;
+  transform: scale(var(--ggs,1));
+  background: yellowgreen;
+  z-index: -1;
+  
+  animation: load 4.5s linear infinite;
+
+ } 
+ .opaque::after {
+   bottom: -64px;
+   left:10px;
+   background-color: black;
+   border: 2px solid whitesmoke;
+   height: 10px;
+   width:100px;
+   z-index: -2;
+ }
+ 
+
+ @keyframes load { 
+  0% { 
+      width: 0%; 
+  } 
+
+  100% { 
+      width: 98px; 
+      
+      
+  } 
+} 
+@keyframes bye{
+  0%{
+   opacity: 100%;
+    
+  }
+  30%,100%{
+    opacity: 0%;
+  }
+  
+}
+
+
+.visible{
+  animation:hello 15s step-end infinite;
+  font-size: 20px;
+  background-color: black;
+  color: whitesmoke;
+  font-family: Staaliches;
+  width:200px;
+  border: 17px solid black;
+}
+@keyframes hello{
+  0%{
+   opacity: 0%;
+    
+  }
+  30%,100%{
+    opacity: 100%;
+  }
+  
+}
+
+
+
+.highlight{
+  background-color: yellow;
+  border:3px dotted black;
+  width :720px;
+}
+
+.info{
+  left:-10px;
+}
+.jobs{
+  font-size: 20px;
+  text-align: center;
+}
+.fa {
+  background: black;
+  color: white;
+  height: 200px;
+  width:200px;
+  border-radius: 50px;
+}
+
+.fa:hover{
+  color: white;
+}
+.fa:active{
+  color: white;
+}
+.fa:checked{
+color: white;
+}
+.fa:visited{
+  color: white;
+}
+.socials{
+  color: white;
+  
+}
+
+.infohead{
+  background-color: gray;
+  font-size: 20px;
+  font-family: Staaliches;
+  width:300px;
+}
+
+
+
+body{
+    background-color: red;
+}
+
+.tit{
+  font-family: Staaliches;
+  font-size: 40px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width:300px;
+  height:50px;
+  border:3px solid yellowgreen;
+  transform: scale(var(--ggs,1));
+  background-color: yellowgreen;
+  z-index: 1;
+ color: whitesmoke;
+ 
+}
+.tit::after,
+ .tit::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  right: 24px
+  
+ }
+ .tit::before {
+  width: 300px;
+  height: 20px;
+  
+  left:12px;
+  transform: scale(var(--ggs,1));
+  background: black;
+  z-index: -1;
+  animation:chart 1s linear infinite;
+  animation-delay: .5s;
+  
+
+ } 
+ .tit::after {
+   bottom:4px;
+   left:12px;
+   height: 20px;
+   width:320px;
+   background:black;
+
+   z-index: -3;
+   animation:chart 1s linear infinite;
+   
+ }
+ 
+
+ @keyframes chart{
+   0%,100%{
+     width:300px;
+   }
+   50%{
+      width:340px;
+   }
+ }
+
+
+
+
+
+ .tits-o{
+  background: red;
+  font-family: Staaliches;
+  font-size: 70px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  color: aliceblue;
+  z-index: -3;
+  width:520px;
+  left:20%;
+  height:80px;
+
+}
+.tits-o::after,
+ .tits-o::before {
+   
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+
+  
+ }
+ .tits-o::before {
+  border:5px solid black;
+  width:60px;
+ 
+  animation:gor 5s  linear infinite;
+
+ z-index: -2;
+ 
+ } 
+ .tits-o::after {
+
+ width:60px;
+
+ z-index: -1;
+ border: 5px solid red;
+ top:30%;
+ animation:gor 5s linear infinite;
+ animation-delay: .5s;
+ 
+ }
+
+
+ @keyframes gor{
+  0%{
+    top:80%;
+    left:-10%;
+    width:0%;
+  }
+  10%{
+    top:80%;
+    width:150%;
+  }
+  20%{
+    top:80%;
+    width:0%;
+    left:150%;
+  }
+  21%{
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    top:190%;
+    left:150%;
+    width: 0%;
+  }
+ 
+ 30%{
+  top:190%;
+  left:-10%;
+  width: 200%;
+ }
+ 31%{
+  animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+  top:190%;
+  left:-10%;
+  width: 0%;
+ }
+ 
+ 54%{
+  animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+   top:300%;
+   left:-10%;
+   width: 0%;
+ }
+ 60%{
+  top:300%;
+  left:-10%;
+  width: 0%;
+}
+  70%{
+    top:300%;
+    left:-10%;
+    width: 0%;
+  }
+
+  80%{
+    animation-timing-function:step-end;
+    top:300%;
+    left:-10%;
+    width: 200%;
+  }
+  97%{
+    top:300%;
+    left:-10%;
+    width: 200%;
+  }
+  100%{
+    animation-timing-function:step-end;
+    top:300%;
+    left:-10%;
+    width: 200%;
+    opacity: 0%;
+  }
+}
+ 
+
+ .header2{
+   background-color: black;
+   color: whitesmoke;
+   font-family: Staaliches;
+   font-size: 70px;
+   border-style:20px inset black;
+   
+ }
+
+ .big{
+   transform: scale(3);
+   top:20px;
+   bottom:-20px;
+   left:30px;
+ }
+
+.header4{
+  transform: rotate(90deg);
+  transform: scale(3);
+}
+.bigs{
+  transform: scale(3);
+  top:70px;
+}
+
+
+
+ .smallWrtting{
+  font-size: 15px;
+  position: relative;
+  text-decoration: none;
+  transition: color .4s ease-out;
+}
+
+.smallWrtting:hover {
+  right: 0;
+  text-decoration: none;
+}
+  
+ .smallWrtting:hover:after {
+    border-color:whitesmoke;
+    right: 0;
+  }
+  
+  .smallWrtting:after {
+    border-radius: 2em;
+    border-top: .1em solid black;
+    content: "";
+    position: absolute;
+      right: 100%;
+      bottom: 0em;
+      left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1),
+                border-color .4s ease-out;
+  }
+  
+  
+  .smallWrtting:hover:after {
+  right: 0;
+  }
+
+ 
+ 
